@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <style> 
+            body {
+                background-image: url("/static/salary.png");
+                background-repeat:no-repeat;
+                background-size: contain;
+                background-position-x: center;
+                
+                
+            }
+           
+            p {
+                position: absolute;
+                top: 5%;
+                left:35%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                font-family: Helvetica;
+                letter-spacing: 2px;
+                text-align: center;
+                box-sizing: border-box;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 2px solid white;
+                animation: typingEffect 3s steps(30) 500ms 1 normal, blinkEffect 500ms steps(30) infinite normal;
+            }
+            @keyframes typingEffect {
+                from {width: 0;
+                }
+                to {
+                width: 15em;
+                }
+            }
+           
+            @keyframes blinkEffect {
+                from {
+                border-right-color: white;
+                }
+                to {
+                border-right-color: transparent;
+                }
+            }
+        </style> 
+    </head>
+             
+    <body>
+            
+            
+        <p>Salary is {{ prediction_text}}  
+        </p>
+ 
+    </body>
+</html>
